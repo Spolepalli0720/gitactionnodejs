@@ -1,0 +1,203 @@
+$studio-primary: #1a73e8;
+$studio-secondary: #ff8c00;
+
+.solution-creation-modal-container {
+    min-height: calc(100vh - 120px);
+    max-height: calc(100vh - 120px);
+    border: 0.1em solid #e3eaef;
+
+    ::-webkit-scrollbar {
+        width: 0.4em;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: $studio-primary;
+    }
+}
+
+.solution-creation-modal-tab {
+    min-height: calc(100vh - 120px);
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 25%;
+    float: left;
+    text-align: left;
+    .tab-list {
+        cursor: pointer;
+        padding-left: 0.5em;
+        background-color: rgb(243, 243, 243);
+        .tab-title {
+            cursor: pointer;
+            font-weight: bolder;
+            margin: 0;
+            padding: 0.8em;
+            width: 100%;
+        }
+        .tab-description {
+            cursor: pointer;
+            padding-left: 1em;
+            font-size: smaller;
+            width: 100%;
+        }
+    }
+    .tab-selected {
+        background-color: $studio-primary;
+        color: white;
+        :hover {
+            background-color: $studio-primary;
+        }
+    }
+}
+
+.solution-creation-modal-content {
+    min-height: calc(100vh - 120px);
+    max-height: calc(100vh - 120px);
+    width: 75%;
+    float: right;
+    padding: 0.4em;
+    padding-right: 1.2em;
+    overflow: hidden;
+    overflow-y: auto;
+    border-left: 1px solid #e3eaef;
+
+    .modal-inner-tabs {
+        min-height: 4em;
+        max-height: 4em;
+        .dropzone-label {
+            font-size: large;
+            padding: 0.4em;
+            margin-bottom: 0;
+        }
+        .tabs-row {
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            .tabs-content {
+                cursor: pointer;
+                label {
+                    cursor: pointer;
+                    font-size: medium;
+                    font-weight: bold;
+                    padding: 0.5em;
+                    margin: 0;
+                }
+            }
+        }
+
+        .selected-inner-tag {
+            border-bottom: 0.2em solid $studio-primary;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+    }
+
+    .modal-inner-content {
+        min-height: calc(100vh - 200px);
+        max-height: calc(100vh - 200px);
+        border: 1px solid #e3eaef;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+
+    .dropzone-area {
+        position: relative;
+        min-height: calc(100vh - 500px);
+        max-height: calc(100vh - 500px);
+        width: 80%;
+        top: 5em;
+        left: 10%;
+        text-align: center;
+        cursor: pointer;
+        border: 1px dotted black;
+        background-color: rgb(246, 246, 246);
+        div {
+            position: absolute;
+            margin: 0;
+            width: 60%;
+            top: 50%;
+            left: 20%;
+            i {
+                font-size: 2em;
+            }
+        }
+    }
+
+    .file-preview-area {
+        position: relative;
+        min-height: calc(100vh - 500px);
+        max-height: calc(100vh - 500px);
+        width: 80%;
+        top: 5em;
+        left: 10%;
+        background-color: rgb(246, 246, 246);
+        text-align: center;
+        .file-preview-message {
+            position: absolute;
+            margin: 0;
+            width: 100%;
+            height: auto;
+            top: 35%;
+            label {
+                display: inline;
+                font-weight: bold;
+            }
+            p {
+                display: inline;
+            }
+        }
+        .file-preview-button {
+            position: absolute;
+            bottom: 1%;
+            right: 1%;
+            button {
+                margin: 0.2em;
+            }
+        }
+    }
+
+    .solution-modal-card {
+        margin-top: 0.8em;
+        margin-bottom: 0.8em;
+        min-height: 5em;
+        box-shadow: 0 0 5px $studio-primary;
+        .card-body {
+            .sol-card-heading {
+                text-align: left;
+            }
+            .sol-card-desc {
+                float: left;
+                width: 70%;
+                ::-webkit-scrollbar {
+                    width: 0.1em;
+                }
+
+                ::-webkit-scrollbar-thumb {
+                    background-color: rgb(236, 236, 236);
+                }
+                p {
+                    text-align: left;
+                    margin: 0;
+                    overflow-y: scroll;
+                    word-wrap: none;
+                    min-height: 6.1em;
+                    max-height: 6.1em;
+                }
+            }
+            .sol-card-img {
+                float: right;
+                width: 30%;
+                img {
+                    width: 5em;
+                }
+            }
+            .sol-card-btn {
+                margin-top: 1em;
+                width: 100%;
+                background-color: $studio-primary;
+                color: white;
+                border: none;
+            }
+        }
+    }
+}

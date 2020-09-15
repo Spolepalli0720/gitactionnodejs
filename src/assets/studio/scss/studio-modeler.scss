@@ -1,0 +1,390 @@
+@import '~bpmn-js/dist/assets/diagram-js.css';
+@import '~bpmn-font/dist/css/bpmn-embedded.css';
+@import '~bpmn-js-properties-panel/dist/assets/bpmn-js-properties-panel.css';
+
+@import '~dmn-js/dist/assets/diagram-js.css';
+@import '~dmn-js/dist/assets/dmn-js-shared.css';
+@import '~dmn-js/dist/assets/dmn-js-drd.css';
+@import '~dmn-js/dist/assets/dmn-js-decision-table.css';
+@import '~dmn-js/dist/assets/dmn-js-decision-table-controls.css';
+@import '~dmn-js/dist/assets/dmn-js-literal-expression.css';
+@import '~dmn-js/dist/assets/dmn-font/css/dmn.css';
+
+.bjs-powered-by, .dmn-definitions, .powered-by-logo {
+    display: none;
+}
+
+#workflowContainer, #decisionContainer, #ruleContainer {
+    padding-top: 0;
+    padding-bottom: 0;
+    background: inherit;
+}
+
+#workflowPalette, #decisionPalette, #rulePalette {
+    height: calc(100vh - 160px); 
+    width: 100%; 
+    float: left;
+    overflow-y: auto;
+    background: inherit;
+    border: solid 1px #CCC;
+    border-radius: 0px 0px 5px 0px;
+}
+
+#workflowProperties, #decisionProperties, #ruleProperties {
+    height: calc(100vh - 160px); 
+    width: 100%; 
+    float: right; 
+    overflow-y: auto; 
+    display: block;
+    background: inherit;
+    border: solid 1px #CCC;
+    border-radius: 0px 0px 0px 5px;
+}
+
+#workflowCanvas, #decisionCanvas, #ruleCanvas {
+    height: calc(100vh - 160px); 
+    width: 100%; 
+    top: 0px; 
+    left: 0px; 
+    overflow: auto;
+    background: inherit;
+    border: solid 1px #CCC;
+    border-radius: 5px;
+
+    // background-size: 40px 40px;
+    // background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px);
+    
+    // background-size: 80px 80px;
+    // background-image: linear-gradient(to right, #f4f4fa 1px, transparent 1px), linear-gradient(to bottom, #f4f4fa 1px, transparent 1px);
+  
+    // background-image: linear-gradient(rgba(244,244,250,.8) 1px,transparent 0),
+    //                   linear-gradient(#f4f4fa 1px,transparent 0),
+    //                   linear-gradient(90deg,rgba(244,244,250,.8) 1px,transparent 0),
+    //                   linear-gradient(90deg,#f4f4fa 1px,transparent 0),
+    //                   linear-gradient(transparent 3px,#fff 0,#fff 94px,transparent 0),
+    //                   linear-gradient(90deg,#f4f4fa 3px,transparent 0,transparent 94px,#f4f4fa 0);
+    // background-size: 24px 24px,96px 96px,24px 24px,96px 96px,96px 96px,96px 96px;
+}
+
+.entry-studio-context-pad {
+    font-size: 18px !important;
+    width: 18px !important; 
+    height: 18px !important; 
+    margin: 0 2px 2px 0; 
+    text-align: center; 
+    display: inline-block; 
+    border-radius: 3px; 
+    cursor: default; 
+    background-color: #FEFEFE; 
+    box-shadow: 0 0 2px 1px #FEFEFE; 
+    pointer-events: all; 
+    vertical-align: top;
+}
+
+.studio-context-pad-icon {
+    font-size: 18px !important;
+    width: 18px !important; 
+    height: 18px !important; 
+    margin: 0 2px 2px 0 !important;
+}
+
+// **************
+// Palette Styles
+// **************
+.djs-palette {
+    left: 0px;
+    top: 0px;
+    width: 100% !important;
+    height: 100%;
+    border-radius: 5px;
+    background: inherit;
+    
+    .djs-palette-entries {
+        .accordion {
+            .card {
+                margin-bottom: 0;
+
+                .card-header {
+                    padding: 0 !important;
+                    margin-bottom: 0;
+                  
+                    .btn {
+                        text-transform: capitalize;
+                        width: calc(100% - 1px); 
+                        white-space: nowrap; 
+                        overflow: hidden; 
+                        text-overflow: ellipsis;
+
+                        font-family: Arial, sans-serif !important;
+                        font-size: 11px;
+                        font-weight: bolder;
+                        color: inherit;
+
+                        padding: 0.425rem 0.425rem 0.425rem  0.425rem !important; 
+                        margin: 0;
+                    }
+                }
+                .collapse {
+                    display: block;
+                }
+                .collapse:not(.show) {
+                    display: none;
+                }
+                .card-body {
+                    border-top: 0.1rem solid $studio-primary;
+                    flex: 1 1 auto !important;
+                    padding: 0 !important;
+                    margin: 0  !important;
+                    min-height: 1px;
+                    max-height: 300px !important;
+                    overflow-y: scroll !important;   
+                    
+                    .entry:before {
+                        vertical-align: baseline;
+                    }
+                    .entry {
+                        width: 38px;
+                        height: 38px;
+                        margin: 2px;
+                        .img {
+                            width: inherit;
+                            height: inherit;
+                            display: block;                          
+                        }                   
+                    }               
+                }
+
+            }
+
+        }
+    }
+}
+
+// ******************
+// DMN Palette Styles
+// ******************
+.dmn-drd-container {
+    .djs-container {
+        overflow: scroll !important;
+        .djs-palette {
+            width: 8.33333% !important;
+            height: auto;
+        }
+    }
+}
+
+// **********************
+// Canvas :: Shape Styles
+// **********************
+.djs-group {
+    .djs-connection {
+        .djs-visual {
+            path {
+                stroke: $studio-secondary !important;
+                // fill: inherit !important;
+            }
+            polyline {
+                //Dotted arrow of Annotation, etc
+                stroke: $studio-secondary !important;
+                // fill: inherit !important;
+            }
+
+        }
+    }
+    .djs-shape {
+        .djs-visual {
+            circle, polygon {
+                // Event, Gateway[outer]
+                stroke: $studio-primary !important;
+                // fill: inherit !important;
+            }
+            path, rect {
+                // Gateway[inner], Activity, Activity[icon-outline]
+                stroke: $studio-primary !important;
+                // fill: inherit !important;
+            }
+            polyline {
+                //Collaboration inner vertical line
+                stroke: $studio-secondary !important;
+                // fill: inherit !important;
+            }
+            //rect with style stroke-dasharray; change rect stroke color to secondary
+            .djs-label {
+                tspan {
+                    // font-size: 12px;
+                    // font-weight: bolder;
+                    // fill: $studio-secondary;
+                    fill: black;
+                    // fill: inherit !important;
+                };
+            }
+            // Image with href=svg
+            image rect {
+                color: $studio-primary !important;
+                // fill: inherit !important;
+            }
+        }
+    }
+    g[data-element-id^='TextAnnotation'] {
+        .djs-visual {
+            path {
+                // left of border
+                stroke-dasharray: 0.9px, 0.4px;
+                // fill: inherit !important;
+            }
+            rect {
+                stroke: $studio-secondary !important;
+                stroke-dasharray: 1px, 1px;
+                // fill: inherit !important;
+            }
+            .djs-label {
+                tspan {
+                    // font-size: 12px;
+                    // font-weight: bolder;
+                    // fill: $studio-secondary;
+                    // fill: black;
+                    fill: inherit;
+                };
+            }
+        }
+    }
+    .djs-frame {
+        .djs-visual {
+            rect {
+                stroke: $studio-secondary !important;
+                // fill: inherit !important;
+            }
+        }
+    }
+}
+.djs-shape:hover {
+    .djs-visual {
+        circle, polygon {
+            // Event, Gateway[outer]
+            stroke: $studio-secondary !important;
+        }
+        path, rect {
+            // Gateway[inner], Activity, Activity[icon-outline]
+            stroke: $studio-secondary !important;
+        }
+    }
+}
+
+// *****************
+// Properties Styles
+// *****************
+.bpp-properties-panel {
+    font-family: Arial, sans-serif !important;
+    font-size: 90% !important;
+    height: 100%;
+    width: 100%;
+    background: inherit;
+
+    [disabled] {
+        color: inherit;
+    }
+    [type="text"] {
+        background-color: transparent;
+    }
+
+    button:hover {
+        color: $studio-primary !important;
+    }
+
+    input, textarea {
+        border: 1px solid #ccc;
+    }
+
+    input:focus, button:focus, textarea:focus, [contenteditable]:focus {
+      border-color: $studio-primary !important;
+      box-shadow: 0 0 1px 2px rgba(14, 145, 255, 0.2) !important;
+    }
+
+    .bpp-properties {
+        .bpp-properties-header {
+            padding-top: 0 !important;
+          
+            .label {
+                font-size: 80% !important;
+                color: $studio-primary;
+                background-color: transparent !important;
+
+                width: calc(100% - 1px); 
+                white-space: nowrap; 
+                overflow: hidden; 
+                text-overflow: ellipsis;
+                display: none;
+            }
+
+        }
+        .bpp-properties-tab-bar {
+            .bpp-properties-tabs-links {
+                li.bpp-active {
+                    a {
+                        border-top: 1px solid #ccc !important;
+                        border-bottom: 2px solid $studio-primary !important;
+                    }
+                }
+            }
+        }
+        .bpp-properties-tabs-container {
+            .bpp-properties-tab.bpp-active {
+                .bpp-properties-group {
+                    .bpp-properties-entry {
+                        margin-bottom: 0;
+                        label {
+                            font-size: 90% !important;
+                            margin-top: 5px;
+                            color: inherit;
+                        }
+                    }
+                    .group-label {
+                        font-size: 100% !important;
+                        margin-bottom: 0px;
+                        color: inherit;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.bpp-palette-toggle {
+    position: absolute;
+    width: 125px;
+    top: 45%;
+    left: 20px;
+    padding: 0px;
+    margin: 0px;
+    z-index: 100;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: inherit;
+    background: lighten($color: #CCC, $amount: 15);
+    border: 1px solid #CCC;
+    border-radius: 0px 0px 10px 10px;
+    outline: currentcolor none medium;
+    transform-origin: left top 0px;
+    transform: rotate(-90deg) translateX(-50%) translateY(-100%);
+    cursor: pointer;
+}
+
+.bpp-properties-toggle {
+    position: absolute;
+    width: 125px;
+    top: 45%;
+    right: -125px;
+    padding: 0px;
+    margin: 0px;
+    z-index: 100;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: inherit;
+    background: lighten($color: #CCC, $amount: 15);
+    border: 1px solid #CCC;
+    border-radius: 10px 10px 0px 0px;
+    outline: currentcolor none medium;
+    transform-origin: left top 0px;
+    transform: rotate(-90deg) translateX(-50%) translateY(-100%);
+    cursor: pointer;
+}

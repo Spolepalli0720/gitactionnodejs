@@ -1,0 +1,214 @@
+.studio-filter-popover {
+    max-width: calc(60%);
+    // border: 2px solid $studio-primary;
+    .popover-body {
+        width: auto;
+        white-space: nowrap;
+    }
+}
+// .studio-filter-popover.bs-popover-top {
+//     .arrow:after {
+//         border-top-color: $studio-primary;
+//     }
+// }
+// .studio-filter-popover.bs-popover-right {
+//     .arrow:after {
+//         border-right-color: $studio-primary;
+//     }
+// }
+// .studio-filter-popover.bs-popover-bottom {
+//     .arrow:after {
+//         border-bottom-color: $studio-primary;
+//     }
+// }
+// .studio-filter-popover.bs-popover-left {
+//     .arrow:after {
+//         border-left-color: $studio-primary;
+//     }
+// }
+
+.filter-column.idx0 {
+    border: 2px solid #3366CC;
+}
+.filter-column.idx1 {
+    border: 2px solid #109618;
+}
+.filter-column.idx2 {
+    border: 2px solid #990099;
+}
+.filter-column.idx3 {
+    border: 2px solid #3B3EAC;
+}
+.filter-column.idx4 {
+    border: 2px solid #0099C6;
+}
+.filter-column.idx5 {
+    border: 2px solid #316395;
+}
+.filter-column.idx6 {
+    border: 2px solid #994499;
+}
+.filter-column.idx7 {
+    border: 2px solid #AAAA11;
+}
+.filter-column.idx8 {
+    border: 2px solid #6633CC;
+}
+.filter-column.idx9 {
+    border: 2px solid #8B0707;
+}
+.filter-column.idx10 {
+    border: 2px solid #66AA00;
+}
+.filter-column.idx11 {
+    border: 2px solid #5574A6;
+}
+.filter-column.idx12 {
+    border: 2px solid #3B3EAC;
+}
+.filter-column.idx13 {
+    border: 2px solid #2BB673;
+}
+.filter-column.idx14 {
+    border: 2px solid #007fad;
+}
+.filter-column.idx15 {
+    border: 2px solid #FF9900;
+}
+.filter-column.idx16 {
+    border: 2px solid #22AA99;
+}
+.filter-column.idx17 {
+    border: 2px solid #e9a227;
+}
+.filter-column.idx18 {
+    border: 2px solid #329262;
+}
+.filter-column.idx19 {
+    border: 2px solid #E67300;
+}
+.filter-column.idx20 {
+    border: 2px solid #B82E2E;
+}
+.filter-column.idx21 {
+    border: 2px solid #DC3912;
+}
+.filter-column.idx22 {
+    border: 2px solid #DD4477;
+}
+.filter-column.idx23 {
+    border: 2px solid #d91e48;
+}
+
+.selected-filter-delete {
+    vertical-align: top;
+}
+.selected-filter-value {
+    width: 100%;
+    font-size: 95%;
+    font-weight: 600;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    padding: 0.35em 0.6em;
+    margin-left: 0.25rem !important;
+    margin-bottom: 0.25rem !important;
+    margin-right: 0.25rem !important;
+    margin-top: 0 !important;
+    height: 2.4em;
+}
+.selected-filter-value.idx0 {
+    color: #fff;
+    background-color: #3366CC;
+}
+.selected-filter-value.idx1 {
+    color: #fff;
+    background-color: #109618;
+}
+.selected-filter-value.idx2 {
+    color: #fff;
+    background-color: #990099;
+}
+.selected-filter-value.idx3 {
+    color: #fff;
+    background-color: #3B3EAC;
+}
+.selected-filter-value.idx4 {
+    color: #fff;
+    background-color: #0099C6;
+}
+.selected-filter-value.idx5 {
+    color: #fff;
+    background-color: #316395;
+}
+.selected-filter-value.idx6 {
+    color: #fff;
+    background-color: #994499;
+}
+.selected-filter-value.idx7 {
+    color: #fff;
+    background-color: #AAAA11;
+}
+.selected-filter-value.idx8 {
+    color: #fff;
+    background-color: #6633CC;
+}
+.selected-filter-value.idx9 {
+    color: #fff;
+    background-color: #8B0707;
+}
+.selected-filter-value.idx10 {
+    color: #fff;
+    background-color: #66AA00;
+}
+.selected-filter-value.idx11 {
+    color: #fff;
+    background-color: #5574A6;
+}
+.selected-filter-value.idx12 {
+    color: #fff;
+    background-color: #3B3EAC;
+}
+.selected-filter-value.idx13 {
+    color: #fff;
+    background-color: #2BB673;
+}
+.selected-filter-value.idx14 {
+    color: #fff;
+    background-color: #007fad;
+}
+.selected-filter-value.idx15 {
+    color: #fff;
+    background-color: #FF9900;
+}
+.selected-filter-value.idx16 {
+    color: #fff;
+    background-color: #22AA99;
+}
+.selected-filter-value.idx17 {
+    color: #fff;
+    background-color: #e9a227;
+}
+.selected-filter-value.idx18 {
+    color: #fff;
+    background-color: #329262;
+}
+.selected-filter-value.idx19 {
+    color: #fff;
+    background-color: #E67300;
+}
+.selected-filter-value.idx20 {
+    color: #fff;
+    background-color: #B82E2E;
+}
+.selected-filter-value.idx21 {
+    color: #fff;
+    background-color: #DC3912;
+}
+.selected-filter-value.idx22 {
+    color: #fff;
+    background-color: #DD4477;
+}
+.selected-filter-value.idx23 {
+    color: #fff;
+    background-color: #d91e48;
+}

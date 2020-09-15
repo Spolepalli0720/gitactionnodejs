@@ -1,0 +1,51 @@
+.rule-custom-type {
+    width: inherit !important;
+    border-color: #ccc !important;
+    background-color: inherit !important;
+    
+    .deni-react-treeview-item-container {
+        .icon-and-text {
+            cursor: default !important;
+            width: inherit;
+
+            .text {
+                padding-right: 0.25rem;
+            }
+        }
+
+        .rule-custom-type-item {
+            display: flex;
+            flex: 1;
+      
+            .rule-custom-type-item-text {
+              flex: 1;
+              width: 100px;
+              white-space: nowrap; 
+              overflow: hidden; 
+              text-overflow: ellipsis;
+            }
+      
+            .rule-custom-type-item-action {
+              margin-right: 5px;
+              cursor: pointer;
+              opacity: 0.5;
+      
+              &.trash {
+                color: #ff6666;
+              }
+      
+              &.add {
+                color: #006699; //#00cc44;
+                margin-top: 1px;
+              }
+            }
+        }
+
+        &:hover {
+            .rule-custom-type-item-action {
+              visibility: visible;
+              opacity: 1;
+            }
+        }
+    }
+}

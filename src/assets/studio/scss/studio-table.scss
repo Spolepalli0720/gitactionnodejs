@@ -1,0 +1,59 @@
+.table-sorting {
+    cursor: pointer;
+}
+.table-sorting-none::after {
+    font-family: feather !important;
+    content: "\e82a";
+    float: right;
+    opacity: 0.4;
+    cursor: pointer;
+}
+.table-sorting-asc::after {
+    font-family: feather !important;
+    content: "\e82d";
+    float: right;
+    cursor: pointer;
+}
+.table-sorting-desc::after {
+    font-family: feather !important;
+    content: "\e82a";
+    float: right;
+    cursor: pointer;
+}
+.table-nav-container {
+    border: 1px solid #e2e5e8;
+    border-radius: 10px;
+    button {
+        padding: 0.125rem 0.725rem;
+    }
+}
+.grid-action-button {
+    width: 20px !important;
+    height: 20px !important;
+}
+.grid-action-hidden {
+    display: none !important;
+}
+.grid-action-link {
+    border-bottom: solid 1px #000000;
+    border-style: dotted;
+    display: inline;
+    padding-bottom: 3px;
+    color: inherit;
+}
+.grid-data-input {
+    font-size: 90%;
+    width: 100%
+}
+.grid-data-input.number {
+    text-align: right;
+}
+.grid-avatar {
+    width: 17px;
+    height: 17px;
+    &:hover {
+        z-index: 1000;
+        transform: scale(3);
+    }    
+}
+

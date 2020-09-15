@@ -1,0 +1,27 @@
+::-webkit-scrollbar {
+    width: 0.4em;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(241, 241, 241);
+}
+
+.content-float-right {
+    float: right;
+}
+
+.insight-data-container {
+    min-height: 82vh;
+    max-height: 82vh;
+    overflow-y: auto;
+    font-size: 0.8em;
+}
+
+.insight-data-div {
+    overflow-x: auto;
+    border: 1px solid rgb(230, 233, 239);
+    border-radius: 0.25em;
+    padding: 0.8em;
+    margin: 0.4em;
+    text-align: left;
+}

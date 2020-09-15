@@ -1,0 +1,42 @@
+// Customization for installed Components
+
+// react-notification-component
+.react-notification-root {
+    margin-top: -19px;
+    .notification-container-top-right {
+        right: 15px;
+     }     
+}
+.notification-container-bottom-center,
+.notification-container-bottom-left,
+.notification-container-bottom-right,
+.notification-container-center,
+.notification-container-top-center,
+.notification-container-top-left,
+.notification-container-top-right {
+    min-width: 325px;
+    width: auto !important;
+}
+.notification-item .notification-message {
+    line-height: 100%;
+    white-space: nowrap;
+}
+
+// sweet-alert
+.swal2-confirm,
+.swal2-styled.swal2-confirm {
+    background-color: $studio-primary !important;
+}
+.swal2-cancel,
+.swal2-styled.swal2-cancel {
+    background-color: $studio-secondary !important;
+}
+
+.react-datepicker__input-container {
+    width: inherit;
+}
+
+.react-datepicker-wrapper {
+    width: 100%;
+}
+

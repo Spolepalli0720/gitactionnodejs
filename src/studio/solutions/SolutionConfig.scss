@@ -1,0 +1,127 @@
+$studio-primary: #1a73e8;
+$studio-secondary: #ff8c00;
+
+.solution-form-window-container {
+    min-height: calc(100vh - 180px);
+    max-height: calc(100vh - 180px);
+    border: 0.1em solid #e3eaef;
+
+    ::-webkit-scrollbar {
+        width: 0.4em;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: $studio-primary;
+    }
+}
+
+.solution-form-tab {
+    min-height: calc(100vh - 180px);
+    max-height: calc(100vh - 180px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 15%;
+    float: left;
+    text-align: left;
+
+    .solution-creation-form-tabs {
+        min-height: calc(100vh - 225px);
+        max-height: calc(100vh - 225px);
+        .form-step {
+            min-height: 2em;
+            max-height: 2em;
+            width: 100%;
+            padding: 0 3em 0 0.5em;
+            margin: 2em 0;
+            color: grey;
+            cursor: default;
+            font-size: medium;
+            .step-number {
+                border-radius: 50%;
+                width: 36px;
+                height: 36px;
+                padding: 5px;
+                text-align: center;
+                background-color: rgb(220, 220, 220);
+                border: 2px solid rgb(220, 220, 220);
+            }
+        }
+        .selected-form-step {
+            .step-number {
+                background-color: $studio-primary;
+                color: white;
+                border: 2px solid $studio-primary;
+            }
+        }
+    }
+}
+
+.solution-form-content {
+    min-height: calc(100vh - 180px);
+    max-height: calc(100vh - 180px);
+    width: 85%;
+    float: right;
+    padding: 0.4em;
+    padding-right: 1.2em;
+    overflow: hidden;
+    overflow-y: auto;
+    border-left: 1px solid #e3eaef;
+
+    .solution-creation-form-content {
+        min-height: calc(100vh - 200px);
+        max-height: calc(100vh - 200px);
+        position: relative;
+        .form-container {
+            min-height: calc(100vh - 280px);
+            max-height: calc(100vh - 280px);
+            overflow-y: auto;
+            overflow-x: hidden;
+            width: 100%;
+            .solution-form {
+                margin-top: 1em;
+            }
+        }
+        // .progress-bar-container {
+        //     min-height: 3em;
+        //     max-height: 3em;
+        //     border-bottom: 0.1em solid rgb(227, 234, 239);
+        //     .form-progress-label {
+        //         padding: 0.5em 0 1em 0;
+        //         float: left;
+        //         width: 10%;
+        //         margin: 0;
+        //         padding-right: 0.5em;
+        //         text-align: right;
+        //     }
+        //     .form-progress-bar {
+        //         margin: 1em 0 1em 0;
+        //         float: right;
+        //         width: 90%;
+        //         height: 2.5em;
+        //         .progress-bar {
+        //             font-size: 1.4em;
+        //         }
+        //     }
+        // }
+        .button-container {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            button {
+                padding: 4em;
+                border-radius: 2em;
+                border: none;
+                color: white;
+                i {
+                    color: white;
+                }
+            }
+            .prev-button {
+                background-color: $studio-secondary;
+            }
+            .next-button {
+                background-color: $studio-primary;
+            }
+        }
+    }
+}

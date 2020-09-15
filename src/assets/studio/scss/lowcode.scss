@@ -1,0 +1,249 @@
+@import "~formiojs/dist/formio.full.css";
+
+//Styles for Tag element
+.choices__list--multiple .choices__item {
+    font-size: 100%;
+    padding: 0.5em 0.5em !important;
+    font-weight: inherit;
+
+    // Badge Secondary
+    color: #fff;
+    background-color: #6c757d;
+    border: 1px solid #6c757d;
+
+    // Badge Setting
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+}
+.formio-error-wrapper {
+    color: inherit;
+    background-color: inherit;
+    border-color: inherit;
+}
+.formio-error-wrapper, .formio-warning-wrapper {
+    padding: inherit;
+}
+
+.formio-component-submit .btn {
+    background-color: $studio-primary;
+    border-color: $studio-primary;
+    min-width: 100px !important;
+    border-radius: 0.5rem;
+}
+
+.btn-wizard-nav-next, .btn-wizard-nav-next:hover {
+    background-color: $studio-primary;
+    border-color: $studio-primary;
+    min-width: 100px !important;
+    border-radius: 0.5rem;
+}
+
+.btn-wizard-nav-previous, .btn-wizard-nav-previous:hover {
+    background-color: $studio-secondary;
+    border-color: $studio-secondary;
+    min-width: 100px !important;
+    border-radius: 0.5rem;
+}
+
+.btn-wizard-nav-submit, .btn-wizard-nav-submit:hover {
+    background-color: $studio-primary;
+    border-color: $studio-primary;
+    min-width: 100px !important;
+    border-radius: 0.5rem;
+}
+
+.formio-dialog {
+    .formio-dialog-content {
+        padding: 1.425rem 2rem 1.425rem  2rem !important; 
+        background-color: white !important;
+        .btn-primary {
+            margin-top: 0.5rem;
+        }
+        .btn-danger {
+            margin-top: 0.5rem;
+        }
+    }   
+    .formio-dialog-content > button {
+        float: right;
+    }
+}
+
+.form-group .form-control {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.formio-component-form {
+    .formio-component-editgrid > button {
+        margin-top: 0.5rem;
+        float: right;
+    }
+}
+
+.formio-component-form {
+    .formio-form {
+        .row {
+            .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+                padding-right: 5px;
+                padding-left: 5px;
+                .form-group {
+                    margin-bottom: 0.25rem;
+                }
+            }
+        }
+        .formio-component-editgrid {
+            padding-bottom: 2.20rem !important;
+            .editgrid-listgroup {
+                .list-group-item {
+                    .edit-grid-actions {
+                        padding-top: 1.5rem !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// UIBuilder Tabbed Panel
+.tab-pane {
+    .formio-component-datagrid, .formio-component-properties {
+        .datagrid-table tfoot tr td {
+            .formio-button-add-row {
+                float: right;
+            }
+        }
+    }
+    .formio-component-logic > button { 
+        float: right;
+    }
+    .formio-component-logic {
+        .editgrid-listgroup {
+            .list-group-item {
+                .formio-component-actions > button{
+                    float: right;
+                }
+                .editgrid-actions {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .formio-component-attributes {
+        .datagrid-table tfoot tr td {
+            .formio-button-add-row {
+                float: right;
+            }
+        }
+    }
+}
+
+// Style to center breadcrumb buttons
+.formio-form div nav ul {
+    justify-content: center !important;
+    margin-bottom: 0;
+    li {
+        span {
+            border-radius: 4rem !important;
+            padding: 0.5rem 1rem;
+            margin: 0 0.25rem;
+        }
+    }
+}
+
+.formio-form div .list-inline {
+    text-align: center;
+}
+
+.formio-form {
+    .builder-components {
+        .builder-component {
+            .component-btn-group {
+                margin-top: 10px;
+                right: 10px;
+            }
+        }
+    }    
+}
+.formbuilder {
+    margin-right: 0px;
+    margin-left: 0px;
+
+    .formcomponents {
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;    
+    }
+    .formarea {
+        flex: 0 0 91.66667%;
+        max-width: 91.66667%;   
+    }
+}
+.formcomponents {
+    font-family: Arial, sans-serif !important;
+    padding-left: 0;
+    padding-right: 0;
+
+    .builder-sidebar {
+        .form-builder-panel {
+            margin-bottom: 0px;
+
+            .form-builder-group-header {
+                border: 1px solid  rgb(192,192,192);
+                padding: 0px;
+                line-height: 0.75px;
+
+                h5 {
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                    display: inline-block;
+                    width: 100%;
+
+                    .builder-group-button {
+                        font-family: Arial, sans-serif !important;
+                        font-size: 11px;
+                        font-weight: bolder;
+                        color: #666; 
+                        padding: 0.425rem 0.425rem 0.125rem  0.425rem !important; 
+                        margin: 0;
+                        text-align: left;
+                    }
+                }
+            }
+            .collapse {
+                padding-bottom: 0.25em;
+
+                .no-drop {
+                    padding: 0.25em !important;
+                    min-height: 1px;
+                    max-height: 300px !important;
+                    overflow-y: scroll !important;
+                    border-top: 0.1rem solid $studio-primary;
+                  
+                    .formcomponent {
+                        padding: 0px;
+                        height: 38px;
+                        width: 38px;
+                        white-space: nowrap;
+                        overflow-X: hidden;
+
+                        color: #373a3c;
+                        background-color: transparent;
+                        border: 1px solid  rgb(192,192,192);
+
+                        display: inline-block;
+
+                        i {
+                            margin-top: 0.25rem;
+                            margin-left: 0.25rem;
+                            font-size: 1.5em;
+                            // padding-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

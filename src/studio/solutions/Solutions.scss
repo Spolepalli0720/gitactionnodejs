@@ -1,0 +1,37 @@
+.solution-info-badge {
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.solution-name {
+    max-width: calc(100% - 85px);
+}
+
+.solution-shared-user {
+    margin-left: -5px;
+    position: relative;
+    border: 0px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 17px;
+    height: 17px;
+    text-align: top;
+    &:hover {
+        z-index: 1000;
+        transform: scale(3);
+    }
+}
+
+.form-close-btn {
+    min-height: 2em;
+    max-height: 2em;
+}
+
+.icon-explore-right {
+    font-size: 160%;
+}
+
+.empty-image-container {
+    min-height: calc(100vh - 200px);
+    max-height: calc(100vh - 200px);
+}

@@ -1,0 +1,52 @@
+
+.invalid-form-input {
+    color: #dc3545;
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 80%;
+}
+.role-access-icon {
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.role-access-label {
+    padding-left: 5px;
+    // width:  100%;
+    margin-bottom: 0;
+}
+
+.role-access-checkbox {
+    width: 20px;
+    height: 20px;
+}
+.rule-config-table-row-hidden {
+    display: none !important;
+}
+.rule-config-table-col {
+    // min-height: calc(100vh - 400px);
+    // max-height: calc(100vh - 400px);
+    // overflow-y: auto;
+
+    .table-responsive table thead {
+        position: relative;
+        display: block;
+        tr th .content-search {
+            width: 100%;
+        }
+    }
+    .table-responsive table tbody {
+        display: block;
+        min-height: calc(100vh - 410px);
+        max-height: calc(100vh - 410px);
+        overflow-y: auto;
+    }
+}
+
+.configured-roles {
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}

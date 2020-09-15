@@ -1,0 +1,51 @@
+/*** the following rule remove default arrow on HTML tag select - IE10+ ***/
+select::-ms-expand {
+    display: none;
+}
+
+select {
+    /* should keep these firsts rules in place to maintain cross-browser behaviour */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    &:not([size]) {
+        // Add background image when size attribute is not available ( Non-List Selections )
+        background-image: url('../svg/select-down.svg');
+        background-position: 99% center;
+        background-repeat: no-repeat;
+        // height: calc(1.5em + 0.75rem + 2px);
+        height: 35px;
+    }
+    outline: none;
+    /* the following rules can be modified as we wish */
+    padding: 0.375rem 1.25rem 0.375rem 0.25rem;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 0px;
+    font-size: 14px;
+}
+
+select:disabled {
+    background-color: #f3f4f5;
+    border: 1px dotted #e5e6e7;
+    color: gray;
+    cursor: not-allowed;
+}
+
+select option {
+    background-color: #fff !important;
+}
+
+// .studio-select-custom {
+//     div:first-child {
+//         min-height: 35px;
+//         div {
+//             padding: 0.275rem 0.375rem 0.275rem 0.25rem;
+//         }
+//     }
+// }

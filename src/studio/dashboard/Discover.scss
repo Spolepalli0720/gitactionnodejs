@@ -1,0 +1,17 @@
+
+.discover-data-labels-col {
+    .table-responsive table thead {
+        position: relative;
+        display: block;
+        tr th .content-search {
+            width: 100%;
+        }
+    }
+    .table-responsive table tbody {
+        display: block;
+        min-height: 315px;
+        max-height: 315px;
+        overflow-y: auto;
+    }
+
+}

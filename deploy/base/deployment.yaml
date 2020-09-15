@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: studio 
+  labels:
+    app: studio
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: studio 
+  template:
+    metadata:
+      labels:
+        app: studio
+    spec:
+      imagePullSecrets:
+      - name: nexus-reg-cred
+      containers:
+      - name: studio
+        image: nexus.digitaldots.ai/digitaldots/studio:1e7e6d41e1694166ec1efb9ab8761b312d4444f9
+        imagePullPolicy: Always
+        ports:
+        - name: studio
+          protocol: TCP
+          containerPort: 80 

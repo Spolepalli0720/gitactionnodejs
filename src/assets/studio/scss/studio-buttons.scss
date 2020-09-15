@@ -1,0 +1,289 @@
+.solution-type {
+    background-color: $studio-secondary;
+    border-radius: 5px;
+    color: white;
+}
+
+.btn-model-import {
+    background-image: url("../svg/open.svg");
+    position: absolute;
+    top: calc(100vh - 100px);
+    right: 105px;
+    z-index: 100;
+    margin: 0px 15px;
+    padding: 0px;
+    border: medium none;
+    background-color: transparent;
+    color: inherit;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+}
+.btn-model-save {
+    background-image: url("../svg/save.svg");
+    position: absolute;
+    top: calc(100vh - 100px);
+    right: 70px;
+    z-index: 100;
+    margin: 0px 15px;
+    padding: 0px;
+    border: medium none;
+    background-color: transparent;
+    color: inherit;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+}
+.btn-model-publish {
+    background-image: url("../svg/upload.svg");
+    position: absolute;
+    top: calc(100vh - 100px);
+    right: 35px;
+    z-index: 100;
+    margin: 0px 15px;
+    padding: 0px;
+    border: medium none;
+    background-color: transparent;
+    color: inherit;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+}
+.btn-model-download {
+    background-image: url("../svg/download.svg");
+    position: absolute;
+    top: calc(100vh - 100px);
+    right: 0px;
+    z-index: 100;
+    margin: 0px 15px;
+    padding: 0px;
+    border: medium none;
+    background-color: transparent;
+    color: inherit;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+}
+
+.canvas-title {
+    color: $studio-secondary;
+    margin-bottom: 0;
+    background-color: transparent;
+}
+.canvas-action {
+    position: "absolute" !important;
+    top: "0px";
+    float: right;
+    background-color: transparent;
+    margin-top: 0px;
+    margin-right: 5px;
+}
+.canvas-action-menu {
+    background-image: url("../svg/menu.svg");
+    float: left;
+    background-repeat: no-repeat;
+    display: block;
+    margin-right: 10px;
+    height: 15px;
+    width: 15px;
+    border: medium none;
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+.canvas-action-open {
+    background-image: url("../svg/view.svg");
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    height: 15px;
+    width: 15px;
+    border: medium none;
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+.canvas-action-edit {
+    background-image: url("../svg/edit.svg");
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    height: 15px;
+    width: 15px;
+    border: medium none;
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+.canvas-action-history {
+    background-image: url("../svg/history.svg");
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    height: 15px;
+    width: 15px;
+    border: medium none;
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+.canvas-action-deploy {
+    background-image: url("../svg/deployment.svg");
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    height: 15px;
+    width: 15px;
+    border: medium none;
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+.canvas-action-delete {
+    background-image: url("../svg/trash.svg");
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    height: 15px;
+    width: 15px;
+    border: medium none;
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+.canvas-action-save {
+    background-image: url("../svg/save.svg");
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    height: 15px;
+    width: 15px;
+    border: medium none;
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+.canvas-action-publish {
+    background-image: url("../svg/upload.svg");
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    height: 15px;
+    width: 15px;
+    border: medium none;
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+.canvas-action-start {
+    background-image: url("../svg/start.svg");
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    height: 15px;
+    width: 15px;
+    border: medium none;
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+.canvas-action-activate {
+    background-image: url("../svg/checkmark.svg");
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    height: 15px;
+    width: 15px;
+    border: medium none;
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+.canvas-action-deactivate {
+    background-image: url("../svg/pause.svg");
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    height: 15px;
+    width: 15px;
+    border: medium none;
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+.canvas-action-import {
+    background-image: url("../svg/open.svg");
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    height: 15px;
+    width: 15px;
+    margin-bottom: 0;
+    border: medium none;
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+.canvas-action-download {
+    background-image: url("../svg/download.svg");
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    height: 15px;
+    width: 15px;
+    border: medium none;
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+.canvas-action-zoom-in {
+    background-image: url("../svg/zoom-in.svg");
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    height: 15px;
+    width: 15px;
+    border: medium none;
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+.canvas-action-zoom-out {
+    background-image: url("../svg/zoom-out.svg");
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    height: 15px;
+    width: 15px;
+    border: medium none;
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+.canvas-action-zoom-fit {
+    background-image: url("../svg/zoom-fit.svg");
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    height: 15px;
+    width: 15px;
+    border: medium none;
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+}

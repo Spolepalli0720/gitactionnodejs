@@ -1,0 +1,70 @@
+.drop-inner-content {
+    overflow: hidden;
+    background-color: rgb(246, 246, 246);
+    min-height:214px;
+}
+
+
+.drop-area {
+    position: relative;
+    width: 80%;
+    top: 4em;
+    left: 10%;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(246, 246, 246);
+    div {
+        position: absolute;
+        margin: 0;
+        width: 60%;
+        left: 20%;
+        i {
+            font-size: 2em;
+        }
+    }
+}
+.drop-file-preview-area {
+    position: relative;
+    width: 80%;
+    top: 5em;
+    left: 10%;
+    background-color: rgb(246, 246, 246);
+    text-align: center;
+    .drop-file-preview-message {
+        position: absolute;
+        margin: 0;
+        width: 100%;
+        height: auto;
+        top: 35%;
+        
+    }
+
+    
+}
+
+.textarea-wrapper {
+    margin-left: -10px;
+    margin-top:0;
+}
+
+.enable-icon {
+    cursor:pointer;
+}
+
+.disable-icon {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+@media (max-width:767px){
+    .textarea-wrapper{
+        margin-left: 0;
+        margin-top: 16px;
+        padding-left: 17px;
+        padding-left: 22px !important;
+        padding-right:22px !important;
+    }
+    .drop-inner-content{
+        margin-right:7px;
+    }
+}

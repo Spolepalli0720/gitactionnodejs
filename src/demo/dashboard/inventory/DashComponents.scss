@@ -1,0 +1,22 @@
+.carousel-control-prev-icon {
+    background-image: url("../../../assets/demo/svg/left-arrow.svg") !important;
+    border-image: none !important;
+    position: relative;
+    top: -4em;
+}
+
+.carousel-control-next-icon {
+    background-image: url("../../../assets/demo/svg/right-arrow.svg") !important;
+    border-image: none !important;
+    position: relative;
+    top: -4em;
+}
+.dashboard-chart {
+    display: flex;
+    width: 40%;
+}
+
+.dashboard-chart-content {
+    width: 60%;
+}
+

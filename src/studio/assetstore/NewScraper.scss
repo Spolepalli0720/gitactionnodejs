@@ -1,0 +1,154 @@
+$studio-primary: #1a73e8;
+$studio-secondary: #ff8c00;
+
+.scraper-create-modal-container{
+    min-height: calc(100vh - 200px);
+    max-height: calc(100vh - 200px);
+
+    ::-webkit-scrollbar {
+        width: 0.4em;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: $studio-primary;
+    }
+}
+.scraper-create-modal-tab{
+    min-height: calc(100vh - 200px);
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+    padding: 0.4em;
+    width: 20%;
+    float: left;
+    text-align: left;
+
+    
+}
+.scraper-create-modal-tabs{
+    min-height: calc(100vh - 200px);
+    max-height: calc(100vh - 200px);
+        .form-step {
+            min-height: 2em;
+            max-height: 2em;
+            width: 100%;
+            padding: 1.5em 3em 1.5em 1em;
+            cursor: pointer;
+            font-size: small;
+            .step-number {
+                float: left;
+                width: 18%;
+                text-align: center;
+                cursor: pointer;
+                border-radius: 50%;
+                background-color: rgb(220, 220, 220);
+                border: 2px solid rgb(220, 220, 220);
+            }
+            .step-text {
+                float: right;
+                width: 88%;
+                margin: 0;
+                padding-left: 1em;
+                label {
+                    cursor: pointer;
+                }
+            }
+        }
+        .form-step:hover {
+            background-color: white;
+            .step-text,
+            .step-text label {
+                background-color: white;
+            }
+        }
+        .selected-form-step {
+            .step-number {
+                background-color: rgb(129, 129, 129);
+                color: white;
+                border: 2px solid rgb(129, 129, 129);
+            }
+        }
+}
+.scraper-create-modal-content{
+    min-height: calc(100vh - 200px);
+    max-height: calc(100vh - 200px);
+    position: relative;
+    width: 75%;
+    float: right;
+    padding: 0.4em;
+    overflow: hidden;
+    overflow-y: auto;
+    border-left: 1px solid #e3eaef;
+}
+.scraper-create-modal-content{
+    min-height: calc(100vh - 120px);
+    max-height: calc(100vh - 120px);
+    position: relative;
+    width: 80%;
+    float: right;
+    padding: 0.4em;
+    border-left: 1px solid #e3eaef;
+    .modal-form-container{
+        min-height: calc(100vh - 180px);
+        max-height: calc(100vh - 180px);
+        margin: 0 0.5em;
+        overflow: hidden;
+        overflow-y: auto;
+        .progress-bar-container{
+            min-height: 2.5em;
+            max-height: 2.5em;
+            padding: 0.5em 0em 2.2em 0em;
+            .form-progress-bar{
+                float: right;
+                width:80%;
+                height: 2em;
+                // margin: 1.5em 0em 1.5em 0em;
+                border: none;
+            }
+            .form-progress-label{
+                float:right;
+                margin: 0em;
+                width:10%;
+                // padding-right: 0.2em;
+                font-size: smaller;
+            }
+        }}
+.form-container-style {
+    margin: 1.2em 0 0 0;
+}
+.form-label-style {
+    width: 100%;
+}
+.form-input-style {
+    width: 100%;
+}
+
+.modal-button-container{
+    position: absolute;
+    bottom: 1%;
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    button {
+        padding: 0.5em 2.2em 0.5em 2.2em;
+        border-radius: 2em;
+        border: none;
+        color: white;
+    }
+    .modal-general-button,.modal-framework-button,
+    .modal-code-button,.modal-swagger-button,
+    .modal-deploy-button,.modal-test-button,
+    .modal-publish-button{
+        background-color: $studio-primary;
+    }
+    .right{
+        float:right;
+    }
+    .left{
+        float: left;
+    }
+    
+}}
+h5{
+    color: black;
+    font-weight: bolder;
+}

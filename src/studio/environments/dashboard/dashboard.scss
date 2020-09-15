@@ -1,0 +1,31 @@
+.wizard-container {
+    .wizard-content {
+        padding-top: 5em;
+        padding-right: 15em;
+        padding-left: 15em;
+        .row {
+            .col,
+            .col-1,
+            .col-2,
+            .col-3,
+            .col-4,
+            .col-5,
+            .col-6,
+            .col-7,
+            .col-8,
+            .col-9,
+            .col-10,
+            .col-11,
+            .col-12 {
+                .h3,
+                h3 {
+                    color: #000000;
+                }
+            }
+        }
+    }
+    .cloud-wizard-content {
+        padding-left: 8em;
+        padding-right: 8em;
+    }
+}

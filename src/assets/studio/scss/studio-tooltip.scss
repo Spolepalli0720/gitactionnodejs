@@ -1,0 +1,56 @@
+// Tooltip with OverlayTrigger
+.studio-tooltip {
+    .tooltip-inner {
+        background-color: $studio-primary;
+    }
+}
+.studio-tooltip.bs-tooltip-top {
+    .arrow:before {
+        border-top-color: $studio-primary;
+    }
+}
+.studio-tooltip.bs-tooltip-right {
+    .arrow:before {
+        border-right-color: $studio-primary;
+    }
+}
+.studio-tooltip.bs-tooltip-bottom {
+    .arrow:before {
+        border-bottom-color: $studio-primary;
+    }
+}
+.studio-tooltip.bs-tooltip-left {
+    .arrow:before {
+        border-left-color: $studio-primary;
+    }
+}
+
+// Infotip with OverlayTrigger
+.studio-infotip {
+    .tooltip-inner {
+        max-width: calc(100vw / 2);
+        background-color: white;
+        color: black;
+        border: 1px solid $studio-primary;
+    }
+}
+.studio-infotip.bs-tooltip-top {
+    .arrow:before {
+        border-top-color: $studio-primary;
+    }
+}
+.studio-infotip.bs-tooltip-right {
+    .arrow:before {
+        border-right-color: $studio-primary;
+    }
+}
+.studio-infotip.bs-tooltip-bottom {
+    .arrow:before {
+        border-bottom-color: $studio-primary;
+    }
+}
+.studio-infotip.bs-tooltip-left {
+    .arrow:before {
+        border-left-color: $studio-primary;
+    }
+}

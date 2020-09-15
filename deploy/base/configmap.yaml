@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: studio-config
+data:
+  HOST_AUTHENTICATION: http://foundation.enterprise.digitaldots.ai
+  HOST_AUTHORIZATION: http://foundation.enterprise.digitaldots.ai
+  HOST_FOUNDATION: http://foundation.enterprise.digitaldots.ai
+  HOST_STORE: http://foundation.enterprise.digitaldots.ai
+  HOST_CODE_EDITOR: https://dd-theia.herokuapp.com
+  HOST_PROCESS_ENGINE: https://camunda.digitaldots.io/engine-rest
+  HOST_STUDIO_ENGINE: http://process-engine.enterprise.digitaldots.ai
+

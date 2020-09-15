@@ -1,0 +1,211 @@
+#dashboardContainer {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    background: inherit;
+    overflow: hidden;
+
+    .row {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+#dashboardPaletteContainer {
+    position: fixed;
+    z-index: 1;
+    height: calc(100vh - 125px);
+    max-width: 115px;
+    background: white;
+}
+#dashboardPalette {
+    height: inherit;
+    width: 115px;
+    overflow-y: auto;
+    background: inherit;
+    border: solid 1px #ccc;
+    border-radius: 0px 0px 5px 0px;
+}
+.dashboard-palette-toggle {
+    position: fixed;
+    width: 125px;
+    top: 50%;
+    padding: 0px;
+    margin: 0px;
+    z-index: 1;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: inherit;
+    background: lighten($color: #ccc, $amount: 15);
+    border: 1px solid #ccc;
+    border-radius: 0px 0px 10px 10px;
+    outline: currentcolor none medium;
+    transform-origin: left top 0px;
+    transform: rotate(-90deg) translateX(-50%) translateY(-100%);
+    cursor: pointer;
+}
+.dashboard-palette-toggle.hide {
+    left: 218px;
+}
+.dashboard-palette-toggle.show {
+    left: 103px;
+}
+
+#dashboardPropertiesContainer {
+    position: fixed;
+    right: 14px;
+    z-index: 1;
+    height: calc(100vh - 125px);
+    max-width: 230px;
+    background: white;
+}
+#dashboardProperties {
+    height: inherit;
+    width: 230px;
+    overflow-y: auto;
+    display: block;
+    background: inherit;
+    border: solid 1px #ccc;
+    border-radius: 0px 0px 0px 5px;
+}
+.dashboard-properties-toggle {
+    position: fixed;
+    width: 125px;
+    top: 50%;
+    padding: 0px;
+    margin: 0px;
+    z-index: 1;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: inherit;
+    background: lighten($color: #ccc, $amount: 15);
+    border: 1px solid #ccc;
+    border-radius: 10px 10px 0px 0px;
+    outline: currentcolor none medium;
+    transform-origin: left top 0px;
+    transform: rotate(-90deg) translateX(-50%) translateY(-100%);
+    cursor: pointer;
+}
+.dashboard-properties-toggle.hide {
+    right: 118px;
+}
+.dashboard-properties-toggle.show {
+    right: -123px;
+}
+
+#dashboardCanvas {
+    height: calc(100vh - 130px);
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    overflow: auto;
+    background: inherit;
+}
+#dashboardCanvas:last-child {
+    margin-bottom: 5px;
+}
+.dashboard-canvas-item {
+    width: inherit;
+    height: inherit;
+    overflow: hidden;
+}
+.dashboard-palette-item {
+    margin-top: 10px;
+    width: 55px;
+    height: 50px;
+    float: left;
+    margin-bottom: 10px;
+}
+.dashboard-palette-icon {
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    color: #1a73e8;
+}
+.dashboard-palette-text {
+    font-size: 60%;
+}
+
+.dashboard-property-hidden {
+    display: none;
+}
+
+.dashboard-property-category {
+    font-size: 12px;
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+    font: bolder;
+}
+
+.dashboard-prop-catg-fields-show {
+    .dashboard-property-category:after {
+        font: bolder;
+        float: right;
+        margin-right: 5px;
+        content: "-";
+    }
+}
+.dashboard-prop-catg-fields-hide {
+    .dashboard-property-category:after {
+        font: bolder;
+        float: right;
+        margin-right: 5px;
+        content: "+";
+    }
+    .row {
+        display: none;
+    }
+}
+
+.dashboard-property-label {
+    font-size: 90%;
+    text-align: left;
+}
+// .dashboard-property-input {
+//     font-size: 90%;
+// }
+.dashboard-property-input.color {
+    height: 25px !important;
+}
+.dashboard-grid-icon {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 100;
+}
+.apexcharts-menu-icon {
+    display: none;
+}
+.react-google-charts-item {
+    width: inherit;
+    height: inherit;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.studio-dashboard-item {
+    width: inherit;
+    height: inherit;
+    vertical-align: middle;
+    overflow: scroll;
+}
+.dashboard-action-icon {
+    font-size: 14px;
+}
+
+.explaination-card-table {
+    margin-top: 1rem;
+    font-size: 0.7em;
+    height: 100%;
+    thead {
+        background-color: #ccc;
+        th {
+            padding: 0.4rem;
+        }
+    }
+    td {
+        padding: 0.4rem;
+    }
+}

@@ -1,0 +1,14 @@
+.task-input-btn {
+    color: transparent !important;
+}
+.task-output-btn {
+    color: transparent !important;
+}
+.studio-table-data-row:hover {
+    .task-input-btn {
+        color: inherit !important;
+    }
+    .task-output-btn {
+        color: inherit !important;
+    }
+}
