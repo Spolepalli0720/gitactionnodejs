@@ -1,0 +1,71 @@
+name: master
+on:
+  push:
+    branches:
+    - 'master'
+    - '!release'
+    - '!Bugfix'
+    - '!Feature'
+    - '!develop'
+    tags:
+    - v*
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # for notification to microsoft Teams
+      - name: BeverOps Build Notification
+        uses: toko-bifrost/ms-teams-deploy-card@3.1.2
+        with:
+          webhook-uri: ${{ secrets.MSTEAMS_WEBHOOK }}
+          github-token: ${{ github.token }}
+          environment: None
+          timezone: "Asia/Kolkata"
+          card-layout-start: compact
+          card-layout-exit: complete
+          show-on-start: true
+          show-on-exit: true
+          custom-facts: |
+            - name: Repository
+              value: ${{github.repository}}
+            - name: ImageTag
+              value: ${{ github.sha }}
+            - name: sonarqube url
+              value: https://sonar.bever.digitaldots.ai/
+          enable-view-status-action: true
+          enable-review-diffs-action: true
+          view-status-action-text: "View Status"
+
+      #checkout actions
+      - uses: actions/checkout@v2
+
+      #sonarqube static code analysis
+      - name: Setup sonarqube
+        uses: warchant/setup-sonar-scanner@v1
+      - name: Run sonarqube
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: sonar-scanner
+           -Dsonar.login=${{ secrets.SONAR_TOKEN }}
+           -Dsonar.host.url=https://sonar.bever.digitaldots.ai/
+           -Dsonar.projectKey=gitactionnodejs
+      # get tag value from github and set it to variable get_version
+      - name: Get the version
+        id: get_version
+        run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
+
+      #verify the received tag value.
+      - name: Run a one-line script
+        run: echo ${{ steps.get_version.outputs.VERSION }}
+
+      # publish to registry with tag as sha, another tag received from github tag
+      - name: Publish to Registry
+        id: publish-image
+        uses: elgohr/Publish-Docker-Github-Action@master
+        with:
+          name: ${{github.repository}}
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          registry: ${{ secrets.DOCKER_REGISTRY }}
+          tags: "${{ github.sha }},${{ steps.get_version.outputs.VERSION }}"
