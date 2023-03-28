@@ -63,7 +63,7 @@ jobs:
       # publish to registry with tag as sha, another tag received from github tag
       - name: Publish to Registry
         id: publish-image
-        uses: elgohr/Publish-Docker-Github-Action@master
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: ${{github.repository}}
           username: ${{ secrets.DOCKER_USERNAME }}

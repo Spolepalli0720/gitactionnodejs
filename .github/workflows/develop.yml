@@ -50,7 +50,7 @@ jobs:
       # publish to registry with tag as sha and as another tag as latest
       # - name: Publish to Registry
       #   id: publish-image
-      #   uses: elgohr/Publish-Docker-Github-Action@master
+      #   uses: elgohr/Publish-Docker-Github-Action@v5
       #   with:
       #     name: ${{github.repository}}
       #     username: ${{ secrets.DOCKER_USERNAME }}
